@@ -102,7 +102,7 @@ about this section of the client configuration file can be found in :ref:`Passwd
       log = passwdstackclient.log
       log_level = debug
       ca_cert=/etc/futuregrid/imdclient/cacert.pem
-      certfile=/etc/futuregrid/imdclient/imdscert.pem
+      certfile=/etc/futuregrid/imdclient/imdccert.pem
       keyfile=/etc/futuregrid/imdclient/privkey.pem
      
 
