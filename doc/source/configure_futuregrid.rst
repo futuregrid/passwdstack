@@ -66,14 +66,14 @@ First, we are going to configure the main server. We need to configure the ``[Pa
    ::
    
       [PasswdStackServer]
-      port = 56795
+      port = 56796
       proc_max=5
       refresh=20
       log = passwdstackserver.log
       log_level = debug
-      ca_cert=/opt/futuregrid/futuregrid/etc/imdserver/cacert.pem
-      certfile=/opt/futuregrid/futuregrid/etc/imdserver/imdscert.pem
-      keyfile=/opt/futuregrid/futuregrid/etc/imdserver/privkey.pem
+      ca_cert=/etc/futuregrid/imdserver/cacert.pem
+      certfile=/etc/futuregrid/imdserver/imdscert.pem
+      keyfile=/etc/futuregrid/imdserver/privkey.pem
 
 
 ``imageman`` has to have the OpenStack credentials of an admin. Then you edit ``~/.bashrc`` file to include the command **source novarc** (you may need
@@ -101,9 +101,9 @@ about this section of the client configuration file can be found in :ref:`Passwd
       serveraddr=123.123.123.123
       log = passwdstackclient.log
       log_level = debug
-      ca_cert=/etc/futuregrid/imdserver/cacert.pem
-      certfile=/etc/futuregrid/imdserver/imdscert.pem
-      keyfile=/etc/futuregrid/imdserver/privkey.pem
+      ca_cert=/etc/futuregrid/imdclient/cacert.pem
+      certfile=/etc/futuregrid/imdclient/imdscert.pem
+      keyfile=/etc/futuregrid/imdclient/privkey.pem
      
 
 The executable file of this client is ``fg-paswdstack``. More information about how to use FG PasswdStack can be found 
