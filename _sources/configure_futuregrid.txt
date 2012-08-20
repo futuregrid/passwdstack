@@ -75,6 +75,10 @@ First, we are going to configure the main server. We need to configure the ``[Pa
       certfile=/opt/futuregrid/futuregrid/etc/imdserver/imdscert.pem
       keyfile=/opt/futuregrid/futuregrid/etc/imdserver/privkey.pem
 
+
+``imageman`` has to have the OpenStack credentials of an admin. Then you edit ``~/.bashrc`` file to include the command **source novarc** (you may need
+to indicate the full path of the **novarc** file.
+
 Once everything is set up, you can start the server executing ``PasswdStackServer.py`` as ``imageman`` user.
 
 .. note::
